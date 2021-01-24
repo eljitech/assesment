@@ -15,3 +15,5 @@ tbl_guru.id_guru=tbl_rombelkelas.id_guru JOIN tbl_jenjang ON
 tbl_jenjang.kode_jenjang=tbl_rombelkelas.kode_jenjang JOIN tbl_kelas ON 
 tbl_kelas.kode_kelas=tbl_rombelkelas.kode_kelas WHERE tbl_rombelkelas.kode_rombel = '1819-A1'
 ```
+
+<img src="https://github.com/eljitech/assesment/blob/master/picture/github/1.PNG"/>
