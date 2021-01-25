@@ -67,4 +67,7 @@ JOIN tbl_datasiswa ON tbl_datasiswa.id_siswa=tbl_detailpenilaian.id_siswa
 WHERE tbl_detailpenilaian.kode_penilaian = '22012021-DIMASQI' AND tbl_datasiswa.id_siswa = '2'
 ```
 
-<img src="https://github.com/eljitech/assesment/blob/master/picture/github/Screenshot%20from%202021-01-25%2007-30-49.png"/>
+<img src="https://github.com/eljitech/assesment/blob/master/picture/github/Screenshot%20from%202021-01-25%2016-10-24.png"/>
+
+Notes:
+* `pic` yang ada di `tbl_detailpenilaian` dipindah ke `tbl_detailkarakter` agar ketika user yang login dia teridentifikasi sebagai apa bisa dimunculkan list penilaian siswa yang tersedia untuk dia. 
