@@ -53,3 +53,18 @@ JOIN tbl_datasiswa ON tbl_datasiswa.id_siswa=tbl_detailpenilaian.id_siswa
 ```
 
 <img src="https://github.com/eljitech/assesment/blob/master/picture/github/Screenshot%20from%202021-01-25%2007-30-49.png"/>
+
+##### Menampilkan List data Dari Penilaian Karakter terhadap Siswa berdasarkan Kode Penilaian dan ID_siswa
+```.sql
+SELECT tbl_detailpenilaian.kode_penilaian, tbl_datasiswa.nis, tbl_datasiswa.nama_siswa, 
+tbl_detailkarakter.kode_karakter, tbl_karakter.karakter, tbl_karakter.kategory, 
+tbl_detailkarakter.kode_detailkarakter, tbl_detailkarakter.indikator, tbl_detailpenilaian.nilai, 
+tbl_detailpenilaian.pic
+FROM tbl_detailpenilaian
+JOIN tbl_detailkarakter ON tbl_detailkarakter.kode_detailkarakter=tbl_detailpenilaian.kode_detailkarakter
+JOIN tbl_karakter ON tbl_karakter.kode_karakter=tbl_detailkarakter.kode_karakter
+JOIN tbl_datasiswa ON tbl_datasiswa.id_siswa=tbl_detailpenilaian.id_siswa
+WHERE tbl_detailpenilaian.kode_penilaian = '22012021-DIMASQI' AND tbl_datasiswa.id_siswa = '2'
+```
+
+<img src="https://github.com/eljitech/assesment/blob/master/picture/github/Screenshot%20from%202021-01-25%2007-30-49.png"/>
