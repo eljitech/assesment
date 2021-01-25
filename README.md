@@ -70,4 +70,15 @@ WHERE tbl_detailpenilaian.kode_penilaian = '22012021-DIMASQI' AND tbl_datasiswa.
 <img src="https://github.com/eljitech/assesment/blob/master/picture/github/Screenshot%20from%202021-01-25%2016-10-24.png"/>
 
 Notes:
-* `pic` yang ada di `tbl_detailpenilaian` dipindah ke `tbl_detailkarakter` agar ketika user yang login dia teridentifikasi sebagai apa bisa dimunculkan list penilaian siswa yang tersedia untuk dia. 
+* `pic` yang ada di `tbl_detailpenilaian` dipindah ke `tbl_detailkarakter` agar ketika user yang login dia teridentifikasi sebagai apa bisa dimunculkan list penilaian siswa yang tersedia untuk dia.
+
+* Tambahkan data penilaian terhadap siswa baru untuk mencompare informasi
+```.sql
+INSERT INTO tbl_detailpenilaian
+(id_detailpenilaian, kode_penilaian, id_siswa, kode_detailkarakter, nilai, pic)
+VALUES 
+('val_kar_disiplin25', '22012021-DIMASQI', 2, 'disiplin_1', 1, ''),
+('val_kar_disiplin26', '22012021-DIMASQI', 2, 'disiplin_2', 1, ''),
+('val_kar_disiplin27', '22012021-DIMASQI', 2, 'disiplin_3', 1, ''),
+('val_kar_disiplin28', '22012021-DIMASQI', 2, 'disiplin_4', 1, '');
+```
