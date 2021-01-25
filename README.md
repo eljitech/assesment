@@ -18,7 +18,7 @@ tbl_kelas.kode_kelas=tbl_rombelkelas.kode_kelas WHERE tbl_rombelkelas.kode_rombe
 
 <img src="https://github.com/eljitech/assesment/blob/master/picture/github/1.PNG"/>
 
-### 25 Jan 2021 : 
+### 25 Jan 2021 : Reaserch Data untuk Menampilkan Data yang sesuai untuk Report List Penilaian
 ##### Mendapatkan Total Data Penilaian pada Table detail Penilaian (Sementara)
 ```.sql
 SELECT COUNT(*) 'total_data'
@@ -40,7 +40,7 @@ JOIN tbl_karakter ON tbl_karakter.kode_karakter=tbl_detailkarakter.kode_karakter
 
 <img src="https://github.com/eljitech/assesment/blob/master/picture/github/Screenshot%20from%202021-01-25%2007-24-07.png"/>
 
-##### Menampilkan Data Penilaian (Masih Global)
+##### Menampilkan Informasi Data Siswa
 ```.sql
 SELECT tbl_detailpenilaian.kode_penilaian, tbl_datasiswa.nis, tbl_datasiswa.nama_siswa, 
 tbl_detailkarakter.kode_karakter, tbl_karakter.karakter, tbl_karakter.kategory, 
